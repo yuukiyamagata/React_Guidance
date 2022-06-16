@@ -15,8 +15,14 @@ export const Counter = () => {
   return (
     <>
       <h1>Counter: { count } </h1>
-      <button onClick={ onCountUp }>Increment</button>
-      <button onClick={ onCountDown }>Decrement</button>
+      <button
+        className="ui primary button"
+        onClick={ onCountUp }
+      >Increment</button>
+      <button
+        className="ui red button"
+        onClick={ onCountDown }
+      >Decrement</button>
     </>
   )
 }
