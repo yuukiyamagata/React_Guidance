@@ -1,11 +1,11 @@
 
 export const Button = props => {
+  const { onClick, text, color } = props
   return(
     <>
-  <button className="ui active button">
-    <i className="user icon" />
-    { props.title }
-  </button>
+    <button onClick={ onClick } className={`ui ${color} button`}>
+    { text }
+    </button>
     </>
   )
 }
